@@ -1,0 +1,511 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;700;900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat+Alternates:wght@300;400;500;700;900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: poppins;
+    border: none;
+    outline: none;
+
+}
+:root{
+    --black:#000000;   
+}
+body{
+    /* background-color: rgb(252, 229, 201); */
+}
+
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+    scroll-padding-top: 6rem;
+    scroll-behavior: smooth;
+}
+header{
+    position: sticky;
+    /* top: 0; left: 0; right: 0; */
+    display: flex;
+    z-index: 999;
+    /* flex-wrap: wrap; */
+    justify-content: space-between;
+    align-items: center;
+    padding: 2rem 9%;
+    background-color:rgb(252, 229, 201);
+    
+
+}
+header .logo{
+    font-size: 3rem;
+    color: rgb(255, 44, 55);
+    font-family: Montserrat Alternates;
+    font-weight: 900;
+}
+header .navbar a{
+
+    font-size: 2rem;
+    color: rgb(73, 73, 118);
+    margin: 0 1rem;
+    padding: 0.5rem 1rem;
+ }
+ header .navbar a:hover{
+     background-color:rgb(255, 44, 55);
+     border-radius: 1rem;
+     padding: 0.5rem 1rem;
+     color: white;
+ }
+ header .icons a{
+     margin: 0 2rem;
+     color: var(--black);
+     font-size: 1.5rem;
+ }
+ 
+ header .icons a:hover{
+     margin: 0 2rem;
+     color: rgb(182, 49, 49);
+     font-size: 1.5rem;
+     /* ; */
+ }
+ #menu-bar{
+    font-size: 2rem;
+    padding:.5rem 1.5rem;
+    border: .1rem solid var(--black);
+    cursor:pointer;
+    display: none;
+    
+}
+
+
+
+.hero-banner{
+    display: flex;
+    background-image: url(banne.png);
+    background-repeat: no-repeat;
+    
+    padding: 0 11%;
+    background-size: cover;
+}
+
+.hero-text-box {
+    flex: 50%;
+    
+    margin-top: 16rem;
+}
+.hero-text-box h1{
+    font-size: 3rem;
+    line-height: 1.6;
+    color:rgb(53, 53, 122); ;
+}
+
+.hero-img-box {
+    flex: 50%;
+    margin-top: 13rem;
+    
+}
+
+
+.location{
+   position: absolute;
+   left: 0;
+   top: 50rem;
+   background-color:rgb(206, 16, 16); ;
+   padding: 1rem 2rem  1rem  5rem;
+   border-top-right-radius: 2rem;
+   border-bottom-right-radius: 2rem;
+   color: white;
+   display: flex;
+   gap: 2rem;
+    
+}.location i{
+    margin-top: .7rem;
+}
+
+
+.hero-img  {
+    width: 100%;
+}
+.second-content img{
+    width: 100%;
+}
+
+.highlight{
+    display: flex;
+    flex-wrap: wrap;
+    padding: 2rem 9%;
+    gap: 2rem;
+    justify-content: center;
+}
+
+.highlight .hl-heading-box {
+    flex: 1;
+    display: flex;
+    gap: 2rem;
+    align-items: center;
+    /* background-color: antiquewhite; */
+   
+}
+
+.highlight .hl-heading-box h2{
+    display: inline-block;
+    font-size: 2rem;
+    color: rgb(53, 53, 122);
+    font-weight :700;
+
+
+}
+.vline{
+    background-color:rgb(255, 44, 55) ;
+    width: .3rem;
+    height: 6rem; 
+    padding: .6rem; 
+}
+
+
+.highlight .hl-paragraph-box{
+    flex: 1;
+}
+
+.highlight .hl-paragraph-box p{
+text-align: justify;
+font-size: 1.5rem;
+}
+
+
+.part
+{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    padding: 2rem;
+}
+.part-1{
+    background-image: url(food-photographer-jennifer-pallian-306915-unsplash.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+
+}
+.part-2{
+    background-image: url(food-photographer-jennifer-pallian-2.png);
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: .5rem;
+  
+}
+.part-3{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.part-3 h2{
+    color: rgb(184, 12, 86);
+}
+.part-1-1{
+    margin-top: 20rem;
+    padding:0 2rem;
+    background-color: rgba(197, 39, 39, 0.815);
+}
+.part-1-2{
+    margin-top: 20rem;
+    padding: 0 2rem;
+    background-color: rgba(197, 39, 39, 0.815);
+   
+   
+}
+
+
+.food-headings{
+    text-align: center;
+}
+.food-headings h2{
+    margin: 2rem;
+    font-size: 2rem;
+    color:rgb(53, 53, 122);
+}
+.food-headings p{
+    /* margin: 2rem; */
+    font-size: 1.5rem;
+    color: black;
+    
+}
+.food{
+    padding: 2rem 9%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+    
+}
+/* .item-1 img,.item-1 img,.item-1 img{
+    /* width: 200px;
+    height: 200px; */
+
+
+.item-1{
+    border-radius: 1rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+
+}
+.item-2{
+    border-radius: 1rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+    
+}
+.item-3{
+    border-radius: 1rem;
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.3);
+    overflow: hidden;
+
+}
+.price
+{
+    padding: 1rem;
+}
+.img-2 p{
+    padding: 1rem;
+}
+
+
+.search-section{
+    background-color: bisque;
+    /* padding: 5rem  5rem; */
+    position: relative;
+}
+.before-line{
+    padding: .2rem;
+    background-color: red;
+    width: 8rem;
+    height:.1rem ;
+    align-self: center;
+    text-align: center;
+}
+
+.search{
+    padding: 2rem 30%;
+    
+}
+
+
+.search-1 h2{
+    text-align: center;
+    margin: 1REM;
+}
+
+.search-1{
+    background-color: white;
+    padding: 7rem 5rem;
+    border-radius: 1rem;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+   
+}
+
+/* .search::before{
+    content:url(/—Pngtree—lettuce_1175257.png);
+    display: block;
+    position: absolute;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 500px;
+    height: 2rem;
+    left:0;
+    top: 0;
+   
+} */
+.SEARCH-FOR-1{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    padding: .3rem;
+    margin-top: 3rem;
+}
+.SEARCH-FOR-1 a{
+    background-color: red;
+    color: white    ;
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+}
+.SEARCH-FORM{
+    border: 1px solid red;
+    display: flex;
+    justify-content: space-between;
+    padding: .5rem;
+   
+}
+.SEARCH-FORM a{
+    background-color: red;
+    color: white    ;
+    padding: 1rem 2.5rem;
+    font-size: 1rem;
+}
+.input-search{
+    width: 100%;
+}
+.mobile-container{
+    padding: 2rem 9%;
+    
+    display: flex;
+    flex-wrap: wrap;
+    background-color: rgb(255, 210, 154);
+}
+.mob-content{
+    flex: 50%;
+    display: flex;
+    gap: 3rem;
+    margin-top: 13rem;
+    
+}
+.vline-2{
+    background-color:rgb(255, 44, 55) ;
+    width: .3rem;
+    height: 9rem; 
+    padding: .6rem; 
+}
+
+.mob-content h1{
+    
+    font-size: 3rem;
+    color: rgb(53, 53, 122);
+    font-weight :700;
+    /* text-align: center; */
+    
+}
+
+
+.mob-img{
+    flex: 50%;
+    margin-top: 3rem;
+}
+.mob-img img{
+    width: 100%;
+    text-align: center;
+}
+.mob-text{
+align-items:center;
+}
+.mob-text p{
+    margin-left: 4.5rem;
+    font-size: 1rem;
+    margin-top: 2REM;
+    margin-bottom: 3REM;
+}
+.mob-text IMG{
+    width: 100%;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+@media (max-width:991px) {
+    html{
+        font-size: 55%;    
+        
+    }
+    header .logo{
+        padding: 2rem;
+   
+
+    }
+    
+}
+@media (max-width:768px) {
+
+    html{   
+    font-size: 50%;    
+    
+    }
+    
+    #menu-bar{
+        display: block;
+    }
+    
+    header .navbar {
+        position: absolute;
+        top: 100%; left:-120rem;
+        width: 100%;
+        background: white;
+        border-top: .1rem solid black;
+     }
+     header .navbar a{
+       
+        font: size 1.7em;
+        color: var(--black);
+        border:.1rem solid black;
+        display: block;
+        margin: 1rem;
+        padding: .5rem;
+        border-radius: .5rem;
+        text-align: center;
+
+     }
+
+     .highlight .hl-heading-box
+     {
+         flex: 100%
+     }
+
+     .highlight .hl-paragraph-box{
+        flex: 100%;
+     }
+     .highlight .hl-paragraph-box p{
+        text-align: justify;
+        font-size: 1.5rem;
+        }
+
+        .img-1 img, .img-2 img, .img-3 img{
+            width: 300px;
+            height: 300px;
+            border-radius: 6rem;
+        
+        }
+        .search{
+            padding: 2rem 10%;
+            
+        }
+
+        .mob-text-box {
+            flex: 100%;
+        }
+        .mob-img-box {
+            flex: 100%;
+        }
+        
+
+    
+}
+
+@media (max-width:610px) {
+    .mob-text{
+        flex:100%;
+    }
+    .mob-img{
+        flex: 100%;
+    }
+    
+}
